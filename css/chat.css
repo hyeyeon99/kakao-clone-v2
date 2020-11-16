@@ -1,0 +1,136 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: white;
+}
+
+/*.chat {
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+   배경화면처럼 적용
+}*/
+
+.chats-body {
+  padding: 10px 0px;
+  padding-top: 100px;
+  background-color: #26282d;
+  min-height: 1000vh;
+}
+
+.status-bar {
+  padding: 0px 10px;
+}
+
+.header {
+  /*background-color: rgba(253, 248, 248, 0.933);*/
+  margin: 0px;
+  padding: 30px 10px;
+}
+
+.chat__write {
+  left: 0; /*가운데 정렬 방법*/
+  right: 0;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc;
+  padding: 5px 20px;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chat__write i {
+  font-size: 22px;
+}
+
+/*해당 클래스안의 n번째 클래스만 해당*/
+.chat__write-column:nth-child(2) {
+  width: 80%;
+}
+
+.chat__write-column input {
+  padding: 20px 10px;
+  width: 100%;
+  border: none;
+}
+
+.chat__write-column input:focus {
+  outline: none;
+}
+
+.chat__messages {
+  padding-top: 30px;
+  border-top: 1px solid #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+.chat__timestamp {
+  background-color: #303437;
+  font-size: 12px;
+  color: #f7f7f7;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.message__content {
+  width: 80%;
+  color: white;
+}
+
+.incoming-message {
+  align-self: flex-start;
+}
+
+.sent-message {
+  align-self: flex-end;
+}
+
+.incoming-message img {
+  width: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.message__bubble {
+  background-color: #4f5458;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.message__author {
+  margin-bottom: 7px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6d6f73;
+}
+
+.incoming-message .message__bubble {
+  border-top-left-radius: 0px;
+}
+
+.sent-message .message__bubble {
+  border-top-right-radius: 0px;
+  /*그라데이션 넣기
+  background-image: linear-gradient(to right, #7b4397, #dc2430);*/
+}
